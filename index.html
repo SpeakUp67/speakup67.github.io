@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SpeakUp — Écouter • Soutenir • Agir</title>
+<meta name="description" content="SpeakUp — Une association pour une parole libérée, une écoute bienveillante et des droits respectés.">
+<style>
+:root{--blue:#1264d6;--navy:#071a33;--light:#f4f7fb;--gray:#667085}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--navy);background:#fff}
+a{color:inherit;text-decoration:none}
+header{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid #e7ebf0}
+.nav{max-width:1120px;margin:auto;padding:16px 22px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:900;font-size:25px;letter-spacing:-1px}.brand span{color:var(--blue)}
+nav a{margin-left:22px;font-weight:700;font-size:14px}
+.btn{display:inline-block;background:var(--blue);color:#fff;padding:14px 20px;border-radius:999px;font-weight:800}
+.hero{background:linear-gradient(135deg,#f8fbff,#eef3f9);padding:72px 22px 56px}
+.hero-inner{max-width:1120px;margin:auto;display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+.kicker{font-weight:900;color:var(--blue);letter-spacing:2px;text-transform:uppercase}
+h1{font-size:clamp(44px,7vw,78px);line-height:.95;margin:14px 0 22px;letter-spacing:-4px}
+h1 span{color:var(--blue)}
+.lead{font-size:20px;line-height:1.55;color:#42526b;max-width:650px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.secondary{display:inline-block;border:2px solid var(--navy);padding:12px 19px;border-radius:999px;font-weight:800}
+.flyer{width:100%;max-width:520px;display:block;margin:auto;border-radius:24px;box-shadow:0 25px 60px rgba(7,26,51,.2)}
+section{padding:72px 22px}.wrap{max-width:1120px;margin:auto}
+.title{text-align:center;font-size:38px;margin:0 0 14px;letter-spacing:-1px}
+.sub{text-align:center;color:var(--gray);font-size:18px;max-width:760px;margin:0 auto 38px;line-height:1.5}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{padding:28px;border:1px solid #e5eaf0;border-radius:22px;background:#fff;box-shadow:0 10px 30px rgba(7,26,51,.06)}
+.icon{font-size:34px}.card h3{font-size:22px;margin:12px 0}.card p{color:#526174;line-height:1.55}
+.band{background:var(--navy);color:#fff}.band .sub{color:#cbd5e1}
+.points{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;max-width:850px;margin:auto}
+.point{background:#fff;color:var(--navy);padding:18px 20px;border-radius:16px;font-weight:750}
+.point:before{content:"✓";color:var(--blue);font-weight:900;margin-right:10px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:start}
+.contact-box{background:var(--light);padding:30px;border-radius:24px}.contact-line{font-size:18px;margin:15px 0}.contact-line b{display:block;font-size:13px;color:var(--blue);text-transform:uppercase;letter-spacing:1px;margin-bottom:4px}
+footer{background:#061426;color:#cbd5e1;padding:30px 22px;text-align:center;font-size:14px}
+@media(max-width:800px){nav{display:none}.hero-inner,.contact{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.points{grid-template-columns:1fr}section{padding:54px 18px}.hero{padding-top:48px}h1{letter-spacing:-2px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <a class="brand" href="#accueil">S<span>U</span> Speak<span>Up</span></a>
+    <nav>
+      <a href="#mission">Notre mission</a>
+      <a href="#actions">Nos actions</a>
+      <a href="#public">Pour qui ?</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn" href="#contact">Nous contacter</a>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="accueil">
+  <div class="hero-inner">
+    <div>
+      <div class="kicker">SpeakUp Association</div>
+      <h1>Ta voix compte.<br><span>Parlons.</span></h1>
+      <p class="lead">Pour une parole libérée, une écoute bienveillante et des droits respectés. SpeakUp écoute, soutient et agit face au mal-être, au harcèlement, aux discriminations et aux injustices.</p>
+      <div class="actions">
+        <a class="btn" href="#contact">Parler avec nous</a>
+        <a class="secondary" href="#mission">Découvrir SpeakUp</a>
+      </div>
+    </div>
+    <img class="flyer" src="flyer-speakup.png" alt="Flyer de l'association SpeakUp">
+  </div>
+</section>
+
+<section id="mission">
+  <div class="wrap">
+    <h2 class="title">ÉCOUTER • SOUTENIR • AGIR</h2>
+    <p class="sub">Une association ouverte aux enfants, adolescents, adultes et témoins, avec une approche humaine, respectueuse et sans jugement.</p>
+    <div class="cards">
+      <article class="card"><div class="icon">💬</div><h3>Écouter</h3><p>Offrir un espace où chacun peut parler, être entendu et exprimer ce qu’il vit.</p></article>
+      <article class="card"><div class="icon">🤝</div><h3>Soutenir</h3><p>Briser l’isolement, accompagner les personnes et les aider à retrouver confiance.</p></article>
+      <article class="card"><div class="icon">🛡️</div><h3>Agir</h3><p>Informer, orienter, sensibiliser et contribuer à la défense des droits de chacun.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="actions">
+  <div class="wrap">
+    <h2 class="title">Ce que nous défendons</h2>
+    <p class="sub">SpeakUp veut contribuer à faire reculer le silence et à favoriser des environnements plus respectueux.</p>
+    <div class="points">
+      <div class="point">Briser le silence</div>
+      <div class="point">Rompre l’isolement</div>
+      <div class="point">Soutenir et accompagner</div>
+      <div class="point">Sensibiliser et informer</div>
+      <div class="point">Prévenir le harcèlement</div>
+      <div class="point">Défendre les droits de chacun</div>
+    </div>
+  </div>
+</section>
+
+<section id="public">
+  <div class="wrap">
+    <h2 class="title">Pour qui ?</h2>
+    <p class="sub">Enfants • Adolescents • Adultes • Témoins</p>
+    <div class="cards">
+      <article class="card"><h3>À l’école</h3><p>Mal-être, harcèlement, discrimination, injustice : la parole doit pouvoir être entendue.</p></article>
+      <article class="card"><h3>Pour tous</h3><p>Parce que personne ne devrait rester seul face à une situation difficile ou injuste.</p></article>
+      <article class="card"><h3>Et les témoins</h3><p>Un témoin peut aussi avoir besoin d’écoute, d’informations et d’un accompagnement.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="background:#f7f9fc">
+  <div class="wrap contact">
+    <div>
+      <div class="kicker">Nous contacter</div>
+      <h2 class="title" style="text-align:left;margin-top:8px">Une question ? Une situation ?</h2>
+      <p class="sub" style="text-align:left;margin-left:0">Vous pouvez prendre contact avec SpeakUp. La première étape, c’est de pouvoir parler.</p>
+    </div>
+    <div class="contact-box">
+      <div class="contact-line"><b>Téléphone</b><a href="tel:+33664110894">06.64.11.08.94</a></div>
+      <div class="contact-line"><b>Email</b><a href="mailto:speakup@asso67gmail.com">speakup@asso67gmail.com</a></div>
+      <a class="btn" href="mailto:speakup@asso67gmail.com">Écrire à SpeakUp</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>© SpeakUp Association — Écouter • Soutenir • Agir</footer>
+</body>
+</html>
