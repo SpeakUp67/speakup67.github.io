@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="SpeakUp — Ta voix compte. Nous sommes là pour t'écouter.">
+<title>SpeakUp — Ta voix compte</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <a class="brand" href="#accueil" aria-label="SpeakUp, accueil"><img src="logo.png" alt="Logo SU SpeakUp Association"></a>
+  <nav aria-label="Navigation principale">
+    <a class="active" href="#accueil">Accueil</a>
+    <a href="#apropos">À propos</a>
+    <a href="#actions">Nos actions</a>
+    <a href="#pour-qui">Pour qui ?</a>
+    <a href="#temoignages">Témoignages</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="top-cta" href="#contact">AGIR ENSEMBLE</a>
+</header>
+
+<main>
+<section id="accueil" class="hero">
+  <div class="hero-copy">
+    <div class="eyebrow">ASSOCIATION</div>
+    <h1>TA VOIX COMPTE.<br><span>NOUS SOMMES LÀ<br>POUR T’ÉCOUTER.</span></h1>
+    <p class="lead">SpeakUp est une association engagée contre le mal-être, le harcèlement, la discrimination et l’injustice.</p>
+    <p class="bold">Ensemble, brisons le silence.</p>
+    <a class="primary" href="#contact">ÉCOUTER • SOUTENIR • AGIR</a>
+  </div>
+  <div class="hero-visual"><img src="visuel-circulaire.png" alt="Visuel SpeakUp — Ensemble, faisons entendre nos voix"></div>
+</section>
+
+<section id="apropos" class="section">
+  <div class="section-title"><span></span><h2>NOUS ÉCOUTONS</h2><span></span></div>
+  <div class="audience-grid">
+    <article class="card"><div class="line-icon">♙</div><h3>ENFANTS</h3><p>Tu vis une situation difficile ?<br>Parle-en, tu n’es pas seul(e).</p></article>
+    <article class="card"><div class="line-icon">♙</div><h3>ADOLESCENTS</h3><p>Des solutions existent.<br>Nous sommes là pour toi.</p></article>
+    <article class="card"><div class="line-icon">♙</div><h3>ADULTES</h3><p>Tu souffres au travail<br>ou dans ta vie ?<br>Parlons-en.</p></article>
+    <article class="card"><div class="eye-icon">◉</div><h3>TÉMOINS</h3><p>Tu vois quelque chose<br>qui ne va pas ?<br>Ton signalement peut tout changer.</p></article>
+  </div>
+</section>
+
+<section id="actions" class="section actions-section">
+  <div class="section-title"><span></span><h2>NOUS AGISSONS CONTRE</h2><span></span></div>
+  <div class="issues">
+    <div><b>◎</b><strong>MAL-ÊTRE</strong></div>
+    <div><b>♟</b><strong>HARCÈLEMENT</strong></div>
+    <div><b>◯</b><strong>DISCRIMINATION</strong></div>
+    <div><b>⚖</b><strong>INJUSTICE</strong></div>
+  </div>
+  <div class="services">
+    <article><div class="round">◉</div><h3>ÉCOUTER</h3><p>Offrir une écoute bienveillante, sans jugement, en toute confidentialité.</p></article>
+    <article><div class="round">♡</div><h3>SOUTENIR</h3><p>Accompagner chaque personne avec respect, empathie et soutien.</p></article>
+    <article><div class="round">i</div><h3>INFORMER</h3><p>Sensibiliser et informer pour comprendre et prévenir.</p></article>
+    <article><div class="round">◈</div><h3>SENSIBILISER</h3><p>Briser les tabous et encourager la parole libre et responsable.</p></article>
+    <article><div class="round">♙</div><h3>ACCOMPAGNER</h3><p>Orienter vers les bonnes ressources et ne laisser personne seul(e).</p></article>
+  </div>
+</section>
+
+<section id="pour-qui" class="difference">
+  <div class="heart">♡</div>
+  <div><h2>ENSEMBLE, FAISONS LA DIFFÉRENCE.</h2><p>Brisons le silence. Changeons les choses.</p></div>
+  <a href="#contact">AGIR ENSEMBLE</a>
+</section>
+
+<section id="temoignages" class="quote">
+  <h2>TA VOIX COMPTE.</h2><p>Une parole peut être le début d’un changement.</p>
+</section>
+
+<section id="contact" class="contact section">
+  <div class="section-title"><span></span><h2>TU VEUX NOUS PARLER ?</h2><span></span></div>
+  <p class="contact-intro">Remplis le formulaire ci-dessous en toute confiance.<br><strong>Ta parole est importante.</strong></p>
+  <form action="https://formsubmit.co/speakup@asso67gmail.com" method="POST">
+    <input type="hidden" name="_subject" value="Nouveau message depuis le site SpeakUp">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" value="merci.html">
+    <div class="row">
+      <label>Prénom<input name="prenom" type="text" placeholder="Prénom" required></label>
+      <label>Âge<input name="age" type="number" min="1" max="120" placeholder="Âge"></label>
+    </div>
+    <label>Tu es...
+      <select name="profil" required><option value="" disabled selected>Tu es...</option><option>Enfant</option><option>Adolescent(e)</option><option>Adulte</option><option>Témoin</option><option>Autre</option></select>
+    </label>
+    <label>E-mail<input name="email" type="email" placeholder="E-mail" required></label>
+    <label>Ton message<textarea name="message" rows="6" placeholder="Ton message..." required></textarea></label>
+    <button type="submit">🔒 ENVOYER</button>
+    <p class="privacy">🔒 Ton message est confidentiel et traité avec bienveillance. 💙</p>
+  </form>
+</section>
+</main>
+<footer>TA VOIX COMPTE. PARLE. <span>ON T’ÉCOUTE. ON EST LÀ.</span></footer>
+</body>
+</html>
